@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.fragments.AdminHomeFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/checkedInEmployee"
+                android:text="Checked In "
+                android:textColor="@color/GREEN"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkedOutEmployee"
+                android:text="Checked Out "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/RED"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/UnknownStatus"
+                android:text="Unknown "
+                android:layout_marginStart="10dp"
+                android:textColor="#736E6E"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/TotalEmployees"
+                android:text="Total "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_bar_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/searchemp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:endIconMode="clear_text"
+                android:layout_height="50dp"
+                android:hint="Search Employee..."
+                android:drawablePadding="20dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableTint="@color/black"
+                android:textColorHint="#4A4D53"
+                android:background="@drawable/rounded_search"
+                android:layout_margin="10dp">
+
+            </EditText>
+
+
+            <ImageView
+                android:id="@+id/srchbtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/search"
+                android:layout_marginEnd="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true">
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/statusConnectivityRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</FrameLayout>

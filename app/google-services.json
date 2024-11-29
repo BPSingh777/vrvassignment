@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "462919358263",
+    "project_id": "inwork-480a5",
+    "storage_bucket": "inwork-480a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462919358263:android:6686cbdb77e12c14aeecb2",
+        "android_client_info": {
+          "package_name": "com.solutions.inwork"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi8Xof6tmpuAm1VZUhYC8i7bLohl6CNG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

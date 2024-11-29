@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    tools:context=".AddAdminActivity">
+
+    <TextView
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:gravity="center"
+        android:text="Create New Admin"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <FrameLayout
+            android:id="@+id/addadmincontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/companyIdTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/companyIdEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Company ID"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/companyNameTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/companyNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Company Name"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Repeat the above code for other fields: industry, managing_director, mobile, email, address, location_lat, location_long, radius -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/industryTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/industryEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Industry"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/managingdirectortextfield"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/managingdirectorEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Managing director"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobileTextFeld"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mobileEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Repeat the above code for other fields: address, location_lat, location_long, radius -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addressTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addressEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:clickable="true"
+                    android:background="@drawable/accept_permission_round_btn"
+                    android:id="@+id/btndatepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/alata"
+                    android:gravity="center"
+                    android:text="click to Add office coordinates"
+                    android:textAllCaps="true"
+                    android:textColor="#2196F3"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/locationLatTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:hintTextColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/locationLatEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:hint="Location Latitude"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--                    <androidx.constraintlayout.widget.Guideline-->
+                    <!--                        android:id="@+id/guideline1"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:orientation="vertical"-->
+                    <!--                        app:layout_constraintGuide_percent="0.8"/>-->
+
+                    <!--                    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+                    <!--                        android:layout_width="60dp"-->
+                    <!--                        android:layout_height="60dp"-->
+                    <!--                        android:foregroundGravity="center"-->
+                    <!--                        android:src="@drawable/placeholder"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                        app:layout_constraintStart_toEndOf="@+id/locationLatTextField"-->
+                    <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--                <com.google.android.material.textfield.TextInputLayout-->
+                <!--                    android:id="@+id/locationLatTextField"-->
+                <!--                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    app:endIconMode="clear_text"-->
+                <!--                    app:helperText="Required"-->
+                <!--                    app:helperTextTextColor="#F11111"-->
+                <!--                    app:hintTextColor="@color/black">-->
+
+                <!--                    <com.google.android.material.textfield.TextInputEditText-->
+                <!--                        android:id="@+id/locationLatEditText"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:hint="Location Latitude"-->
+                <!--                        android:inputType="numberDecimal" />-->
+
+                <!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/locationLongTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/locationLongEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="Location Longitude"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/radiusTextField"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/radiusEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Radius (in meters)"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_percent="0.9"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/addAdminbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/accept_permission_round_btn"
+            android:text="Add Admin"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:layout_editor_absoluteX="15dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

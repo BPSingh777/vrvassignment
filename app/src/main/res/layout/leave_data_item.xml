@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:outlineAmbientShadowColor="#00ff97"
+    android:outlineSpotShadowColor="#00ff97"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewEmployeeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emp_id"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/textViewEmployeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emp_Name"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/textViewDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/textViewLeaveDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave_date"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/textViewLeavetillDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave_till_date"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/textViewLeaveReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave_Reason"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/textViewLeavestatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave_status"
+            android:textColor="@color/black"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:visibility="visible"
+            android:layout_margin="0dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/approvebtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Approve"
+                android:background="@drawable/button_background"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/declinebtn"
+                android:layout_marginStart="50dp"
+                android:layout_gravity="end"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Decline"
+                android:background="@drawable/button_backgroundout"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

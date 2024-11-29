@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Home"
+          android:icon="@drawable/home"
+        android:id="@+id/homebtn"/>
+
+    <item
+        android:title="Profile"
+        android:icon="@drawable/user"
+        android:id="@+id/profilebtn"/>
+
+    <item
+        android:title="All Employees"
+        android:icon="@drawable/teamwork"
+        android:id="@+id/empbtn"/>
+
+    <item
+        android:title="Sent Notices"
+        android:icon="@drawable/notice"
+        android:id="@+id/sentnotices"/>
+
+    <item
+        android:title="Add Event"
+        android:icon="@drawable/baseline_event_24"
+        android:id="@+id/addevent"/>
+
+    <item android:title="Manage Employees">
+
+        <menu>
+
+            <item
+                android:title="Employee Status"
+                android:icon="@drawable/status_employee"
+                android:id="@+id/btnStatusEmployee"/>
+
+            <item
+                android:title="Leave Requests"
+                android:icon="@drawable/leave"
+                android:id="@+id/btnleavereq"/>
+
+            <item
+                android:title="Monthly Reports"
+                android:icon="@drawable/report"
+                android:id="@+id/EmpMonthlyReports"/>
+
+            <item
+                android:title="Send Notice"
+                android:id="@+id/Noticebtn"
+                android:icon="@drawable/notice"/>
+
+            <item
+                android:title="Add Employee"
+                android:id="@+id/btnAddEmployee"
+                android:icon="@drawable/person_add"/>
+
+            <item
+                android:title="Screen Time Details"
+                android:id="@+id/btnScreenDetails"
+                android:icon="@drawable/screendetails"/>
+
+        </menu>
+
+
+    </item>
+
+    <item android:title="Log Out">
+
+        <menu>
+
+
+            <item
+                android:title="Contact Us"
+                android:id="@+id/AdmincontactUsbtn"
+                android:icon="@drawable/operator"
+                android:titleTextColor="@android:color/black" />
+
+
+
+            <item
+                android:title="Settings"
+                android:id="@+id/SettingsBtn"
+                android:icon="@drawable/settings_24"
+                android:titleTextColor="@android:color/black" />
+
+            <item
+                android:title="Logout"
+                android:id="@+id/logoutbtn"
+                android:icon="@drawable/baseline_logout_24"/>
+
+        </menu>
+    </item>
+
+
+</menu>

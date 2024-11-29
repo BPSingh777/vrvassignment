@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:outlineAmbientShadowColor="#00ff97"
+    android:outlineSpotShadowColor="#00ff97"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/EmpName"
+            android:layout_width="wrap_content"
+            android:text="Employee Name "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/EmpId"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Id"/>
+
+
+<!--        <Button-->
+<!--            android:id="@+id/EmpReportBtn"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Download pdf"-->
+<!--            android:background="#14D52C"/>-->
+
+    </LinearLayout>
+
+       <TextView
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:text="Download Reports"
+           android:textStyle="bold"
+           android:gravity="center"
+           android:textAllCaps="true"
+           android:textColor="@color/RED"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/EmpReportBtn"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Alerts"
+                android:background="#14D52C"/>
+
+            <Button
+                android:id="@+id/EmpAttendanceReportBtn"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Attendance"
+                android:layout_marginStart="10dp"
+                android:background="#14D52C"/>
+
+
+            <Button
+                android:id="@+id/EmpScreentTimeReportBtn"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Screen Time"
+                android:layout_marginStart="10dp"
+                android:background="#14D52C"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

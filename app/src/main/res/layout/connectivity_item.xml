@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginBottom="2.5dp"
+    android:outlineAmbientShadowColor="#00ff97"
+    android:outlineSpotShadowColor="#00ff97"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ConnectivityemployeeIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Employee ID: M20555"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Status : " />
+
+            <TextView
+                android:id="@+id/LastOnlineTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Online" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/installationstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Installation Status : " />
+
+
+
+
+
+
+        <TextView
+            android:gravity="end"
+            android:paddingEnd="10dp"
+            android:id="@+id/viewMoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0E48FF"
+            android:text="View More>>>>>>"
+            android:textSize="14sp" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ConnectivityLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/LocationOnMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#0E48FF"
+                android:text="Show Last Known location" />
+
+
+            <com.google.android.gms.maps.MapView
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:id="@+id/connectivityMap"
+                android:apiKey="@string/google_maps_api_key"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+
+            <TextView
+                android:id="@+id/viewLessButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E48FF"
+                android:gravity="end"
+                android:paddingEnd="10dp"
+                android:text="View Less>>>>>>"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

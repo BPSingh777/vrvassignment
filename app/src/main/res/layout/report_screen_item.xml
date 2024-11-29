@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/seriallNumberScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="2.5"
+        android:text="S.N"
+        android:textColor="#045885"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+    <!-- Date -->
+    <TextView
+        android:id="@+id/dateScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="Date"
+        android:textSize="8sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+    <!-- Title -->
+    <TextView
+        android:id="@+id/whatsAppScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="whatsApp"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+    <!-- Description -->
+    <TextView
+        android:id="@+id/FacebookScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:text="Facebook"
+        android:textSize="10sp"
+        android:textColor="#045885" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+    <!-- Date -->
+    <TextView
+        android:id="@+id/InstagramScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="Instagram"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+    <!-- Time -->
+    <TextView
+        android:id="@+id/twitterScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="Twitter"
+        android:textColor="#045885"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+    <!-- Remarks -->
+    <TextView
+        android:id="@+id/NewsScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="News"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/GameScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="Game"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/CallsScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="Calls"
+        android:textSize="10sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+
+    <TextView
+        android:id="@+id/OthersScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="Others"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/TotalScreenTimetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="Total"
+        android:textSize="10sp"/>
+
+</LinearLayout>

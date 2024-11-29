@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    tools:context=".client.fragments.ClientHomeFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/location"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/Address"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/refreshbtn"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/refresh_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <!-- Add an empty View to push the button to the end -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/geofencebtn"
+                    android:layout_width="150dp"
+                    android:background="@drawable/button_background"
+                    android:text="Add Geofence"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:text="Show on the map"
+                        android:id="@+id/showMap"
+                        android:textColor="#0B50A6"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="office location"
+                        android:id="@+id/officeMap"
+                        android:textColor="#0B50A6"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:layout_marginEnd="24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+
+
+            <com.google.android.gms.maps.MapView
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/locMap"
+                android:apiKey="@string/google_maps_api_key"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textAllCaps="true"
+                android:id="@+id/ckeckStatus"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/alata"
+                android:textColor="@color/black"
+                android:text="Add Geofence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/app_usage_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="#00ff97"
+            android:outlineSpotShadowColor="#00ff97"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="App Usage Details"
+                    android:fontFamily="@font/alata"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:id="@+id/showmorebtn"
+                    android:text="show more>>>>"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#093FDF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/screenLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WhatsApp Duration : "
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@id/title_text_view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/whatsapp_duration_text"
+                        android:hint="00:00:00"
+                        android:enabled="false"
+                        android:layout_marginEnd="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook Duration :"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@id/whatsapp_duration_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/facebook_duration_text"
+                        android:hint="00:00:00"
+                        android:enabled="false"
+                        android:layout_marginEnd="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instagram Duration:"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@id/facebook_duration_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/instagram_duration_text"
+                        android:hint="00:00:00"
+                        android:enabled="false"
+                        android:layout_marginEnd="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Twitter Duration :"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@id/instagram_duration_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="8dp" />
+
+
+                    <EditText
+                        android:id="@+id/twitter_duration_text"
+                        android:hint="00:00:00"
+                        android:enabled="false"
+                        android:layout_marginEnd="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Newsstand Duration :"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@id/twitter_duration_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="8dp" />
+
+
+                    <EditText
+                        android:id="@+id/news_duration_text"
+                        android:hint="00:00:00"
+                        android:enabled="false"
+                        android:layout_marginEnd="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Games Duration :"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@id/news_duration_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="8dp" />
+
+
+                    <EditText
+                        android:id="@+id/games_duration_text"
+                        android:hint="00:00:00"
+                        android:enabled="false"
+                        android:layout_marginEnd="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calls Duration :"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@id/games_duration_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="8dp" />
+
+
+                    <EditText
+                        android:id="@+id/calls_duration_text"
+                        android:hint="00:00:00"
+                        android:enabled="false"
+                        android:layout_marginEnd="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Others Duration :"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        app:layout_constraintTop_toBottomOf="@id/calls_duration_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="8dp" />
+
+
+                    <EditText
+                        android:id="@+id/others_duration_text"
+                        android:hint="00:00:00"
+                        android:enabled="false"
+                        android:layout_marginEnd="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/showlessbtn"
+                    android:text="show less>>>>"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:textColor="#093FDF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/Takepermission"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Allow"
+                            android:layout_gravity="end"
+                            android:textStyle="bold"
+                            android:background="@drawable/button_background"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.875"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/others_duration_text" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_marginStart="30dp"
+                            android:id="@+id/sendDetails"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Send Details"
+                            android:layout_gravity="end"
+                            android:textStyle="bold"
+                            android:background="@drawable/button_background"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.875"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/others_duration_text" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/screentimetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Screentime details" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/checkInBtn"
+                android:layout_width="150dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:text="Manual Check In"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/button_backgroundout"
+                android:id="@+id/checkOutBtn"
+                android:layout_width="150dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:text="Manual Check Out"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

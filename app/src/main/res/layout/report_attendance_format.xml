@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/alertDetailsLinearLayout"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/headerLinearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="-----------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="INWORK – Monthly Report"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="-----------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+    <!-- Date and Duration -->
+
+    <LinearLayout
+        android:id="@+id/dateDurationLinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/headerLinearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:id="@+id/dateDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Date:"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"
+            android:text="Duration: Last 30 Days"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <!-- Employee Name -->
+    <TextView
+        android:id="@+id/employeeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:text="Employee Name:"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dateDurationLinearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Employee ID -->
+    <TextView
+        android:id="@+id/employeeIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:text="Employee ID:"
+        app:layout_constraintTop_toBottomOf="@id/employeeNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Company ID -->
+    <TextView
+        android:id="@+id/companyIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Company ID:"
+        app:layout_constraintTop_toBottomOf="@id/employeeIDTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Company Name -->
+    <TextView
+        android:id="@+id/companyNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        android:text="Company Name:"
+        app:layout_constraintTop_toBottomOf="@id/companyIDTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Check In Count -->
+    <TextView
+        android:id="@+id/checkInCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Check In Count:"
+        app:layout_constraintTop_toBottomOf="@id/companyNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Check Out Count -->
+    <TextView
+        android:id="@+id/checkOutCountTextView"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:text="Check Out Count:"
+        app:layout_constraintTop_toBottomOf="@id/checkInCountTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/AvgMonthlytime"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:text="Average Time Spent:"
+        app:layout_constraintTop_toBottomOf="@id/checkInCountTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:id="@+id/alterDetailsLinearLayout"
+        app:layout_constraintTop_toBottomOf="@id/checkOutCountTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="-----------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Alert Details Header -->
+        <TextView
+            android:id="@+id/alertDetailsHeaderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="CHECK IN/OUT DETAILS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="-----------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+
+    <!-- Alert Details Table Header -->
+    <LinearLayout
+        android:id="@+id/alertDetailsTableHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/alterDetailsLinearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <!-- S.No. -->
+        <TextView
+            android:id="@+id/serialNumberHeaderTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="2.5"
+            android:text="S.No."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+        <!-- Date -->
+        <TextView
+            android:id="@+id/dateHeaderTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Date"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleHeaderTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:text="CheckIn"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+        <!-- Description -->
+        <TextView
+            android:id="@+id/descriptionHeaderTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:gravity="center"
+            android:text="CheckOut"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+        <!-- Time -->
+        <TextView
+            android:id="@+id/timeHeaderTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Time Spent"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="|"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/AttendanceRemarks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Remarks"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Alert Details Table Data -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/attendanceDetailsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alertDetailsTableHeaderLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/alertDetailsLinearLayout"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--    </LinearLayout>-->
+
+</LinearLayout>

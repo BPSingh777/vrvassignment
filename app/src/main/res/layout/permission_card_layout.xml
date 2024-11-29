@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:outlineAmbientShadowColor="#00ff97"
+    android:outlineSpotShadowColor="#00ff97"
+    app:cardCornerRadius="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:id="@+id/permissionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#1744C3"/>
+
+        <TextView
+            android:id="@+id/permissionDescription"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/grantButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Grant"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

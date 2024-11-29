@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:windowSoftInputMode="adjustPan"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    tools:context=".Admin.fragments.AddEmployeeFragment">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/initialguideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/companyIdTextField"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:endIconMode="clear_text"-->
+<!--                        app:helperText="Required"-->
+<!--                        app:helperTextTextColor="#F11111"-->
+<!--                        app:hintTextColor="@color/black">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/companyIdEditText"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Company ID"-->
+<!--                            android:inputType="text" />-->
+
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/employeeIdTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/employeeIdEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Employee ID"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/firstNameTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/firstNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="First Name"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/lastNameTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/lastNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Last Name"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/dateOfBirthTextField"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:endIconMode="clear_text"
+                            app:helperText="Required"
+                            app:helperTextTextColor="#F11111"
+                            app:hintTextColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/dateOfBirthEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="D.O.B (YYYY-MM-DD)"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.8"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btndatepicker"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:foregroundGravity="center"
+                            android:src="@drawable/date"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/dateOfBirthTextField"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/designationTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/designationEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Designation"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/addressTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/addressEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/adhaarNumberTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/adhaarNumberEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Aadhaar Number"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/mobileTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/mobileEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile"
+                            android:inputType="phone" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/emailTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/officeTextField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:helperText="Required"
+                        app:helperTextTextColor="#F11111"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/officeEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Office"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/workStartTimeTextField"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:endIconMode="clear_text"
+                            app:helperText="Required"
+                            app:helperTextTextColor="#F11111"
+                            app:hintTextColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/workStartTimeEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Work Start Time"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.8"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/workStartTimepicker"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:foregroundGravity="center"
+                            android:src="@drawable/time"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/workStartTimeTextField"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/workEndTimeTextField"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:endIconMode="clear_text"
+                            app:helperText="Required"
+                            app:helperTextTextColor="#F11111"
+                            app:hintTextColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/workEndTimeEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Work End Time"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.8"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/workEndTimepicker"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:foregroundGravity="center"
+                            android:src="@drawable/time"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/workEndTimeTextField"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/workEffectFromDateTextField"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:endIconMode="clear_text"
+                            app:helperText="Required"
+                            app:helperTextTextColor="#F11111"
+                            app:hintTextColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/workEffectFromDateEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Work Effective From Date (YYYY-MM-DD)"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.8"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/workeffectdatepicker"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:foregroundGravity="center"
+                            android:src="@drawable/date"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/workEffectFromDateTextField"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/workEndFromDateTextField"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            app:endIconMode="clear_text"
+                            app:helperText="Required"
+                            app:helperTextTextColor="#F11111"
+                            app:hintTextColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/workEndFromDateEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Work End From Date (YYYY-MM-DD)"
+                                android:inputType="text" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.8" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/workenddatepicker"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:foregroundGravity="center"
+                            android:src="@drawable/date"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/workEndFromDateTextField"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addEmpbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/button_background"
+            android:text="Add Employee"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</FrameLayout>

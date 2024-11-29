@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:outlineAmbientShadowColor="#00ff97"
+    android:outlineSpotShadowColor="#00ff97"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/old_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Old Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/update_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/update_btn"
+            android:background="@drawable/round_btn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginBottom="20dp"
+            android:text="Update password" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

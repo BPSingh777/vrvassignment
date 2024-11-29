@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin.fragments.EmployeeStatusFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_bar_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/StatusSearchView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:endIconMode="clear_text"
+                android:layout_height="50dp"
+                android:hint="Search Employee..."
+                android:drawablePadding="20dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableTint="@color/black"
+                android:textColorHint="#4A4D53"
+                android:background="@drawable/rounded_search"
+                android:layout_margin="10dp">
+
+            </EditText>
+
+
+            <ImageView
+                android:id="@+id/searchbtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/search"
+                android:layout_marginEnd="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true">
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/StatusRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

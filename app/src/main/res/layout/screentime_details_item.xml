@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="#00ff97"
+    android:outlineSpotShadowColor="#00ff97"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Company ID -->
+        <TextView
+            android:id="@+id/companyIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company ID: CIN05"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="2dp"/>
+
+        <!-- Company Name -->
+        <TextView
+            android:id="@+id/companyNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Name: INVYU"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/companyIdText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="2dp"/>
+
+        <!-- Employee ID -->
+        <TextView
+            android:id="@+id/employeeIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee ID: M20556"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/companyNameText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="2dp"/>
+
+        <!-- Employee Name -->
+        <TextView
+            android:id="@+id/employeeNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Name: Kanishk"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/employeeIdText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="2dp"/>
+
+        <!-- Designation -->
+        <TextView
+            android:id="@+id/designationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Designation: AndDev"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/employeeNameText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/viewMoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View more>>>>"
+            android:layout_marginEnd="10dp"
+            android:gravity="end"
+            android:textColor="#1D2ECD"/>
+        <!-- Work Start Time -->
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/expandedDetailsLayout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/workStartTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Start Time: 10:00:00"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/designationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- Work End Time -->
+            <TextView
+                android:id="@+id/workEndTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work End Time: 18:00:00"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/workStartTimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- WhatsApp Duration -->
+            <TextView
+                android:id="@+id/whatsappDurationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WhatsApp Duration: 0:20:30"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/workEndTimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- Facebook Duration -->
+            <TextView
+                android:id="@+id/facebookDurationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook Duration: 0:00:00"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/whatsappDurationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- Instagram Duration -->
+            <TextView
+                android:id="@+id/instagramDurationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram Duration: 2:14:38"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/facebookDurationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- Twitter Duration -->
+            <TextView
+                android:id="@+id/twitterDurationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twitter Duration: 0:01:42"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/instagramDurationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- News Duration -->
+            <TextView
+                android:id="@+id/newsDurationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News Duration: 0:00:00"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/twitterDurationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- Games Duration -->
+            <TextView
+                android:id="@+id/gamesDurationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Games Duration: 0:00:00"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/newsDurationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- Calls Duration -->
+            <TextView
+                android:id="@+id/callsDurationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calls Duration: 0:05:43"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/gamesDurationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <!-- Others Duration -->
+            <TextView
+                android:id="@+id/othersDurationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others Duration: 2:45:24"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/callsDurationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/Datetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : YYYY - MM - DD"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/callsDurationText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/viewLessButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Less>>>>"
+                android:layout_marginEnd="10dp"
+                android:gravity="end"
+                android:textColor="#1D2ECD"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

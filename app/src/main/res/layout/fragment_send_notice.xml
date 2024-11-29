@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    tools:context=".Admin.fragments.SendNoticeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textField2"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            app:helperText="Required"-->
+<!--            app:hintTextColor="@color/black"-->
+<!--            app:helperTextTextColor="#F11111">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/companyIDeditext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Company ID"-->
+<!--                android:inputType="text" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textField3"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            app:helperText="Required"-->
+<!--            app:hintTextColor="@color/black"-->
+<!--            app:helperTextTextColor="#F11111">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/companyNameeditext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Company Name"-->
+<!--                android:inputType="text" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:helperText="Required"
+            app:hintTextColor="@color/black"
+            app:helperTextTextColor="#F11111">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textField5"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            app:helperText="Required"-->
+<!--            app:hintTextColor="@color/black"-->
+<!--            app:helperTextTextColor="#F11111">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/TimesTampEditText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Time Stamp"-->
+<!--                android:inputType="text" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            app:helperText="Required"
+            app:hintTextColor="@color/black"
+            app:helperTextTextColor="#F11111">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NoticeEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:drawablePadding="8dp"
+                android:hint="Notice..."
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SendNoticebtn"
+            android:text="Send Notice"
+            android:background="@drawable/round_btn"/>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/bottom_addgeo"
+        android:title="Add Geo"
+        android:icon="@drawable/baseline_add_location_24"/>
+
+    <item
+        android:title=""
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/bottom_notices"
+        android:title="Notices"
+        android:icon="@drawable/baseline_note_24"/>
+
+
+    <item
+        android:id="@+id/bottom_notification"
+        android:title="Notification"
+        android:icon="@drawable/baseline_notifications_24"/>
+
+
+</menu>

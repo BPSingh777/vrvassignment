@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:repeatMode="reverse"
+    android:repeatCount="infinite">
+
+    <!-- Translate up animation -->
+    <translate
+        android:fromYDelta="10%"
+        android:toYDelta="0"
+        android:duration="1000"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+
+    <!-- Translate down animation -->
+    <translate
+        android:fromYDelta="0"
+        android:toYDelta="10%"
+        android:duration="1000"
+        android:startOffset="1000"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+</set>
+
+

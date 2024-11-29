@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Icon tint when item is checked (selected) -->
+    <item android:src="@drawable/onclickadd" android:state_checked="true" />
+
+    <!-- Icon tint when item is not checked (unselected) -->
+    <item android:src="@drawable/baseline_add_24" android:state_checked="false" />
+</selector>

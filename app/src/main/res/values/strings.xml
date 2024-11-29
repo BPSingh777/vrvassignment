@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Inwork</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_api_key">AIzaSyCMPcL4I8qzdGsX7tLB2_XhS0aGEi45PMw</string>
+    <string name="news_api">"3df7c7834b50487b8962e1592e811d5d"</string>
+
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Replace with your desired layout for the item view -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/serialNumbertxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:text="S.No."
+        android:gravity="center"
+        android:textColor="#045885"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+    <!-- Date -->
+    <TextView
+        android:id="@+id/datetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="Date"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titletxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="Title"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+    <!-- Description -->
+    <TextView
+        android:id="@+id/descriptiontxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:text="Description"
+        android:textSize="13sp"
+        android:textColor="#045885"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+    <!-- Time -->
+    <TextView
+        android:id="@+id/timetxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Time"
+        android:textColor="#045885"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+    <!-- Remarks -->
+    <TextView
+        android:id="@+id/remarkstxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:textColor="#045885"
+        android:text="Remarks"
+        android:textSize="10sp"/>
+
+    <!-- Add other views for your item layout -->
+
+</LinearLayout>

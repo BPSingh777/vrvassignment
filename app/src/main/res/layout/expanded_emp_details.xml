@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginBottom="2.5dp"
+    android:outlineAmbientShadowColor="#00ff97"
+    android:outlineSpotShadowColor="#00ff97"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/employeeIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Employee ID: M20555"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/firstNameTextView"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="First Name: Sai Krishna" />
+
+            <TextView
+                android:id="@+id/EmployeeStatusTextView"
+                android:textStyle="bold"
+                android:text="Status"
+                android:gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/lastNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name: Thogaru" />
+
+        <TextView
+            android:id="@+id/dateOfBirthTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth: 1993-01-06" />
+
+        <TextView
+            android:id="@+id/designationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designation: Manager" />
+
+        <TextView
+            android:gravity="end"
+            android:paddingEnd="10dp"
+            android:id="@+id/viewMoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0E48FF"
+            android:text="View More>>>>>>"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/expandedDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: Hyderabad" />
+
+            <TextView
+                android:id="@+id/adhaarNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adhaar Number: 123456" />
+
+            <TextView
+                android:id="@+id/mobileTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile: 8002256140" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: saikrishnac55@gmail.com" />
+
+            <TextView
+                android:id="@+id/officeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Office: kothapet" />
+
+            <TextView
+                android:id="@+id/workStartTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Start Time: 9" />
+
+            <TextView
+                android:id="@+id/workEndTimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work End Time: 22" />
+
+            <TextView
+                android:id="@+id/workEffectFromDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Effective From Date: 2023-02-01" />
+
+            <TextView
+                android:id="@+id/workEndFromDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work End From Date: 2023-02-28" />
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/pdfbtnlayout"-->
+<!--                android:visibility="visible"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/previewpdfbtn"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Download pdf"-->
+<!--                    android:background="#14D52C"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/downloadpdfbtn"-->
+<!--                    android:layout_marginStart="50dp"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:layout_width="150dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Preview pdf"-->
+<!--                    android:background="#EA515E"/>-->
+
+
+<!--            </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/viewLessButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0E48FF"
+                android:gravity="end"
+                android:paddingEnd="10dp"
+                android:text="View Less>>>>>>"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
